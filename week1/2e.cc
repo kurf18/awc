@@ -24,14 +24,11 @@ int main() {
     int n;
     long long s;
     cin >> n >> s;
-
     vector<long long> a(n);
-    for (int i = 0; i < n; ++i) {
-        cin >> a[i];
-    }
+    REP(i, n) cin >> a[i];
 
     vector<long long> first_half, second_half;
-    for (int i = 0; i < n; ++i) {
+    REP(i, n){
         if (i < n / 2) first_half.push_back(a[i]);
         else second_half.push_back(a[i]);
     }
