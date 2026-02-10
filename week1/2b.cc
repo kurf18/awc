@@ -15,6 +15,12 @@ int main(){
     long long count = 0;
     long long result = 0;
 
+    REP(i, m){
+        if(c[i] < k){
+            count++;
+            result += c[i];
+        }
+    }
 
     cout << count << ' ' << result << '\n';
     return 0;
