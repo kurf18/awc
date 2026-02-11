@@ -5,10 +5,10 @@ using namespace std;
 #define rep(i,n) for (long long i = 0 ; i < (long long) n ; i++)
 
 int main(){
-    long long n, m, k;
-    cin >> n >> m >> k;
-    vector<long long> a(n), b(n);
-    rep(i, n) cin >> a[i] >> b[i];
+    long long n, k;
+    cin >> n >> k;
+    vector<long long> d(n);
+    rep(i, n) cin >> d[i];
     sort(d.begin(), d.end());
 
     long long ans = 0;
